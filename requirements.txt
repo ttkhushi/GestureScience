@@ -1,0 +1,8 @@
+opencv-python>=4.9.0
+mediapipe>=0.10.14
+numpy>=1.26.0
+websockets>=12.0
+
+# Only needed once you move to the ML-based gesture classifier (Phase 5):
+# scikit-learn>=1.4.0
+# torch>=2.2.0

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GestureScience — Brain · DNA · Cosmic Web · Earth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="scene-canvas"></canvas>
+
+  <div id="hud">
+    <div id="hud-title">SCIENTIFIC EXPLORER</div>
+
+    <div id="hud-center">
+      <div id="hud-object-name">BRAIN</div>
+      <div id="hud-level">LEVEL 00</div>
+    </div>
+
+    <div id="hud-hints">
+      <span>&larr; SWIPE &rarr;</span>
+      <span>PINCH TO ZOOM</span>
+      <span>ROTATE HAND TO SPIN</span>
+    </div>
+
+    <div id="hud-progress">
+      <span class="dot active" data-scene="brain"></span>
+      <span class="dot" data-scene="dna"></span>
+      <span class="dot" data-scene="cosmic_web"></span>
+      <span class="dot" data-scene="earth"></span>
+    </div>
+
+    <div id="hud-connection">connecting to backend…</div>
+  </div>
+
+  <div id="gesture-cursor"></div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
